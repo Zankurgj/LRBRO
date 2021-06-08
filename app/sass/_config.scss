@@ -1,0 +1,43 @@
+// IMPORT SECTION
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
+
+// FONTS LOAD SECTION
+@mixin font($f-name, $f-style, $f-weight, $f-url) {
+  @font-face {
+    font-family: $f-name;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    font-display: swap;
+    src: url($f-url + ".woff2") format("woff2");
+    src: url($f-url + ".woff") format("woff");
+  }
+}
+@include font("Roboto", normal, 400, "../fonts/Roboto-Regular");
+@include font("Roboto", normal, 500, "../fonts/Roboto-Medium");
+@include font("Roboto", normal, 700, "../fonts/Roboto-Bold");
+@include font("Roboto", normal, 300, "../fonts/Roboto-Light");
+
+@include font("LandRover", normal, 700, "../fonts/LandRoverWeb-Bold");
+
+// USER VARIABLES SECTION
+$Roboto: "Roboto", sans-serif;
+$LandRover: "LandRover", sans-serif;
+
+$mainfamily: $Roboto;
+$base-duration: 0.2s;
+$base-timing: ease-in;
+$textcolor: #14161e;
+$accent: #9c0510;
+$small-bp: 991px;
+$lg-bp: 1440px;
+
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42;
+  font-family: $mainfamily;
+  overflow-x: hidden;
+  color: $textcolor;
+  // -webkit-font-smoothing: antialiased;
+}
