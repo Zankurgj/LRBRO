@@ -9,6 +9,9 @@
     @media screen and (max-width: $small-bp) {
       padding: 0 30px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      padding: 0 15px;
+    }
   }
 
   .btn-red {
@@ -48,6 +51,12 @@
       max-width: 300px;
       padding: 14px 0;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 18px;
+      line-height: 24px;
+      max-width: 200px;
+      padding: 10px 0;
+    }
   }
   .visually-hidden {
     position: absolute;
@@ -83,11 +92,17 @@
     @media screen and (max-width: $small-bp) {
       padding: 78px 0 0 0;
     }
+    @media screen and (max-width: $mobile-bp) {
+      padding: 30px 0 0 0;
+    }
   }
   .header-about {
     margin-bottom: 160px;
     @media screen and (max-width: $lg-bp) {
       margin-bottom: 60px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      margin-bottom: 0;
     }
   }
   .header-about-logo {
@@ -106,6 +121,11 @@
       height: 135px;
       margin-bottom: 30px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      width: 91px;
+      height: 90px;
+      margin-bottom: 10px;
+    }
   }
   .h1-about {
     font-family: $LandRover;
@@ -122,6 +142,10 @@
     @media screen and (max-width: $small-bp) {
       font-size: 58px;
       line-height: 80px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 32px;
+      line-height: 42px;
     }
   }
   .h1-about-gradient {
@@ -144,6 +168,10 @@
       font-size: 42px;
       line-height: 60px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 28px;
+      line-height: 54px;
+    }
   }
   .main-subtitle {
     color: #373737;
@@ -154,6 +182,10 @@
     @media screen and (max-width: $small-bp) {
       font-size: 32px;
       line-height: 36px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 18px;
+      line-height: 24px;
     }
   }
   .nav-header-about {
@@ -177,6 +209,13 @@
         max-width: 50%;
         margin: 0 0 40px 0;
         padding: 0 30px;
+        &:nth-child(even) {
+          text-align: right;
+        }
+      }
+      @media screen and (max-width: $mobile-bp) {
+        margin: 0 0 20px 0;
+        padding: 0 15px;
       }
     }
   }
@@ -196,10 +235,12 @@
       line-height: 44px;
       padding: 0;
     }
-    @media screen and (max-width: 752px) {
-      font-size: 26px;
-      line-height: 30px;
-      padding: 0;
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 14px;
     }
     &::after {
       content: "";
@@ -269,7 +310,7 @@
   }
   .about-feature-col-img--3 {
     @media screen and (max-width: $small-bp) {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
     img {
       @media screen and (max-width: $lg-bp) {
@@ -300,6 +341,9 @@
     @media screen and (max-width: $small-bp) {
       padding: 0 30px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      padding: 0 15px;
+    }
   }
   .about-feature-col-text--2 {
     justify-content: flex-end;
@@ -309,12 +353,18 @@
       padding: 0 30px;
       order: 1;
     }
+    @media screen and (max-width: $mobile-bp) {
+      padding: 0 15px;
+    }
   }
   .about-feature-col-text--3 {
     justify-content: flex-start;
     padding: 0 45px 0 20px;
     @media screen and (max-width: $small-bp) {
       padding: 0 30px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      padding: 0 15px 15px 15px;
     }
   }
   .about-feature-item {
@@ -345,6 +395,10 @@
       font-size: 28px;
       line-height: 42px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
   .about-feature-title {
     color: #fff;
@@ -361,6 +415,10 @@
       font-size: 44px;
       line-height: 60px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
   .about-feature-subtitle {
     color: #fff;
@@ -376,6 +434,11 @@
       font-size: 32px;
       line-height: 42px;
       margin-bottom: 36px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 20px;
     }
   }
   .about-feature-cost {
@@ -394,6 +457,11 @@
       line-height: 60px;
       margin-bottom: 35px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
   }
   .about-feature-text {
     font-size: 22px;
@@ -410,6 +478,11 @@
       font-size: 28px;
       line-height: 36px;
       margin-bottom: 37px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 20px;
     }
   }
   .btn-red--about-feature {
@@ -429,6 +502,10 @@
     @media screen and (max-width: $small-bp) {
       font-size: 28px;
       line-height: 32px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 14px;
+      line-height: 21px;
     }
     &:hover {
       text-decoration: none;
@@ -540,6 +617,9 @@
     @media screen and (max-width: $small-bp) {
       font-size: 24px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 20px;
+    }
   }
   .about-works-item-text {
     font-size: 14px;
@@ -599,6 +679,10 @@
       font-size: 28px;
       line-height: 36px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   .about-works-link-container {
     display: flex;
@@ -617,6 +701,10 @@
       font-size: 28px;
       line-height: 30px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 18px;
+      line-height: 24px;
+    }
     &:hover {
       text-decoration: none;
       color: $accent;
@@ -627,7 +715,6 @@
     &::after {
       content: "→";
       display: inline-block;
-      transition: 0.3s;
       font-size: 16px;
       color: #9a050f;
       margin-left: 10px;
@@ -636,6 +723,9 @@
       @media screen and (max-width: $small-bp) {
         font-size: 30px;
         line-height: 1;
+      }
+      @media screen and (max-width: $mobile-bp) {
+        font-size: 16px;
       }
     }
   }
@@ -690,6 +780,9 @@
   .about-team-section {
     background-color: #f4f5f7;
     padding: 50px 0 60px 0;
+    @media screen and (max-width: $small-bp) {
+      padding: 50px 0 0 0;
+    }
   }
   .main-subtitle--team {
     margin-bottom: 30px;
@@ -775,6 +868,10 @@
       font-size: 36px;
       line-height: 42px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 22px;
+      line-height: 28px;
+    }
   }
   .about-team-item-text {
     margin-bottom: 20px;
@@ -785,6 +882,10 @@
     @media screen and (max-width: $small-bp) {
       font-size: 28px;
       line-height: 36px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 16px;
+      line-height: 20px;
     }
   }
   .btn-red--about-team {
@@ -797,6 +898,9 @@
   }
   .main-subtitle--comment {
     margin-bottom: 96px;
+    @media screen and (max-width: $mobile-bp) {
+      margin-bottom: 50px;
+    }
   }
   .about-comment-col {
     flex-basis: calc((100% - 40px) / 2);
@@ -829,6 +933,9 @@
       width: 100%;
       height: auto;
     }
+    @media screen and (max-width: $mobile-bp) {
+      max-width: 214px;
+    }
   }
   .about-comment-logo--google {
     width: 308px;
@@ -838,6 +945,9 @@
       width: 100%;
       height: auto;
     }
+    @media screen and (max-width: $mobile-bp) {
+      max-width: 308px;
+    }
   }
   .about-comment-item {
     position: relative;
@@ -845,6 +955,9 @@
     margin-bottom: 40px;
     @media screen and (max-width: $small-bp) {
       padding: 0 0 0 78px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      padding: 0 0 0 45px;
     }
     &:last-child {
       margin-bottom: 0;
@@ -863,6 +976,10 @@
         width: 58px;
         height: 58px;
       }
+      @media screen and (max-width: $mobile-bp) {
+        width: 34px;
+        height: 34px;
+      }
     }
   }
   .about-comment-item-user {
@@ -876,6 +993,9 @@
     @media screen and (max-width: $small-bp) {
       font-size: 32px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 16px;
+    }
   }
   .about-comment-item-lvl {
     color: #898989;
@@ -886,6 +1006,10 @@
     @media screen and (max-width: $small-bp) {
       font-size: 28px;
       line-height: 30px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 14px;
+      line-height: 16px;
     }
   }
   .about-comment-item-stars-block {
@@ -910,6 +1034,10 @@
       width: 24px;
       height: 24px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      width: 16px;
+      height: 16px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -924,6 +1052,10 @@
       font-size: 28px;
       line-height: 30px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
   .about-comment-item-msg {
     color: #131a22;
@@ -932,6 +1064,10 @@
     @media screen and (max-width: $small-bp) {
       font-size: 28px;
       line-height: 36px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 16px;
+      line-height: 20px;
     }
     p {
       margin: 0;
@@ -948,8 +1084,18 @@
       font-size: 32px;
       line-height: 40px;
     }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 16px;
+      line-height: 22px;
+    }
     p {
       margin-bottom: 1rem;
+    }
+    ul {
+      padding: 0 0 0 20px;
+      @media screen and (max-width: $small-bp) {
+        padding: 0 0 0 40px;
+      }
     }
   }
 }
