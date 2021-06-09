@@ -175,8 +175,8 @@
   }
   .main-subtitle {
     color: #373737;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 16px;
     text-align: center;
     margin-bottom: 0;
     @media screen and (max-width: $small-bp) {
@@ -197,12 +197,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1480px;
+    max-width: 860px;
     padding: 0;
     list-style: none;
-    @media screen and (max-width: $lg-bp) {
-      max-width: 1080px;
-    }
     li {
       @media screen and (max-width: $small-bp) {
         flex-basis: 50%;
@@ -222,14 +219,10 @@
   .nav-header-about-item {
     position: relative;
     color: #fff;
-    font-size: 26px;
-    line-height: 40px;
+    font-size: 16px;
     font-weight: 300;
-    padding: 0 20px;
-    @media screen and (max-width: $lg-bp) {
-      font-size: 18px;
-      line-height: 26px;
-    }
+    padding: 0 10px;
+    opacity: 0.8;
     @media screen and (max-width: $small-bp) {
       font-size: 32px;
       line-height: 44px;
@@ -248,8 +241,8 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      height: 20px;
-      width: 2px;
+      height: 15px;
+      width: 1px;
       background-color: #fff;
       @media screen and (max-width: $small-bp) {
         display: none;
@@ -489,7 +482,7 @@
     margin-bottom: 30px;
   }
   .about-feature-link {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 32px;
     text-decoration: underline;
@@ -622,6 +615,7 @@
     }
   }
   .about-works-item-text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     margin-bottom: 10px;
     font-weight: 300;
@@ -669,8 +663,8 @@
     display: block;
     margin: 0 auto;
     max-width: 580px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
     color: #373737;
     text-align: center;
     margin-bottom: 30px;
@@ -1001,7 +995,6 @@
     color: #898989;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 500;
     margin: 0;
     @media screen and (max-width: $small-bp) {
       font-size: 28px;
@@ -1015,6 +1008,7 @@
   .about-comment-item-stars-block {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
   .about-comment-item-stars {
     display: flex;
@@ -1029,7 +1023,7 @@
     background-position: 50% 50%;
     background-size: contain;
     background-image: url("../images/src/star.svg");
-    margin-right: 4px;
+    margin-right: 6px;
     @media screen and (max-width: $small-bp) {
       width: 24px;
       height: 24px;
@@ -1059,15 +1053,15 @@
   }
   .about-comment-item-msg {
     color: #131a22;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     @media screen and (max-width: $small-bp) {
       font-size: 28px;
       line-height: 36px;
     }
     @media screen and (max-width: $mobile-bp) {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 14px;
+      line-height: 18px;
     }
     p {
       margin: 0;
@@ -1078,15 +1072,15 @@
     padding: 50px 0 30px 0;
     background-color: #f4f5f7;
     color: #464646;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 18px;
     @media screen and (max-width: $small-bp) {
       font-size: 32px;
       line-height: 40px;
     }
     @media screen and (max-width: $mobile-bp) {
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 14px;
+      line-height: 18px;
     }
     p {
       margin-bottom: 1rem;
