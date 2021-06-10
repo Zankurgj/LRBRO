@@ -105,12 +105,45 @@
       margin-bottom: 0;
     }
   }
+  .header-about-link-wrapper {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 860px;
+    padding: 0 30px;
+    @media screen and (max-width: $small-bp) {
+      display: block;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      top: 60px;
+      max-width: 550px;
+      padding: 0 15px;
+    }
+  }
+  .header-about-link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 32px;
+    line-height: 44px;
+    &:hover {
+      text-decoration: none;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
   .header-about-logo {
+    position: relative;
     display: block;
     margin: 0 auto;
     width: 131px;
     height: 130px;
     margin-bottom: 20px;
+    z-index: 1;
     @media screen and (max-width: $lg-bp) {
       width: 91px;
       height: 90px;
@@ -200,15 +233,16 @@
     max-width: 860px;
     padding: 0;
     list-style: none;
+    @media screen and (max-width: $mobile-bp) {
+      max-width: 550px;
+    }
     li {
       @media screen and (max-width: $small-bp) {
+        display: flex;
         flex-basis: 50%;
         max-width: 50%;
         margin: 0 0 40px 0;
         padding: 0 30px;
-        &:nth-child(even) {
-          text-align: right;
-        }
       }
       @media screen and (max-width: $mobile-bp) {
         margin: 0 0 20px 0;
@@ -527,6 +561,9 @@
       &:last-child {
         margin-bottom: 0;
       }
+      &:nth-child(n + 3) {
+        display: none;
+      }
     }
     &:nth-child(4n) {
       margin-right: 0;
@@ -777,6 +814,9 @@
     @media screen and (max-width: $small-bp) {
       padding: 50px 0 0 0;
     }
+  }
+  .h2-main--about-team {
+    line-height: 1.4;
   }
   .main-subtitle--team {
     margin-bottom: 30px;
