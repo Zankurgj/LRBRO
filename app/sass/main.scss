@@ -180,6 +180,10 @@
       font-size: 32px;
       line-height: 42px;
     }
+    @media screen and (max-width: 400px) {
+      font-size: 26px;
+      line-height: 36px;
+    }
   }
   .h1-about-gradient {
     background: #fff;
@@ -226,6 +230,18 @@
     width: 100%;
     justify-content: center;
   }
+  .nav-header-about--desktop {
+    @media screen and (max-width: $small-bp) {
+      display: none;
+    }
+  }
+  .nav-header-about--mobile {
+    display: none;
+    justify-content: space-between;
+    @media screen and (max-width: $small-bp) {
+      display: flex;
+    }
+  }
   .nav-header-about-list {
     display: flex;
     justify-content: center;
@@ -236,11 +252,12 @@
     @media screen and (max-width: $mobile-bp) {
       max-width: 550px;
     }
+  }
+  .nav-header-about-list-mobile {
+    padding: 0;
+    list-style: none;
     li {
       @media screen and (max-width: $small-bp) {
-        display: flex;
-        flex-basis: 50%;
-        max-width: 50%;
         margin: 0 0 40px 0;
         padding: 0 30px;
       }
@@ -258,15 +275,18 @@
     padding: 0 10px;
     opacity: 0.8;
     @media screen and (max-width: $small-bp) {
+      min-height: 88px;
       font-size: 32px;
       line-height: 44px;
       padding: 0;
     }
     @media screen and (max-width: $mobile-bp) {
+      min-height: 44px;
       font-size: 18px;
       line-height: 1.2;
     }
     @media screen and (max-width: 400px) {
+      min-height: 38px;
       font-size: 14px;
     }
     &::after {
@@ -292,6 +312,9 @@
     }
     @media screen and (max-width: $small-bp) {
       margin-bottom: 90px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      margin-bottom: 50px;
     }
   }
   .about-feature-col-img {
@@ -1129,6 +1152,9 @@
       padding: 0 0 0 20px;
       @media screen and (max-width: $small-bp) {
         padding: 0 0 0 40px;
+      }
+      @media screen and (max-width: $mobile-bp) {
+        padding: 0 0 0 20px;
       }
     }
   }
